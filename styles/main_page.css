@@ -107,7 +107,60 @@ table {
 body {
   font-family: 'latoregular';
   background-color: #f7f8fc;
+}
 
+header.main_page {
+  margin: 76px 0 48px;
+  display: flex;
+  justify-content: space-between;
+}
+
+header.main_page nav {
+  position: relative;
+  top: 15px;
+}
+
+header.main_page nav ul {
+  display: flex;
+  justify-content: space-between;
+  width: 350px;
+}
+
+header.main_page nav ul li a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #333;
+}
+
+header.main_page nav ul li a.current {
+  color: #bdbdbd;
+}
+
+header.main_page nav ul li a:after {
+  content: " ";
+  display: inline-block;
+  width: 100%;
+  height: 3px;
+  background-color: #5c6bc0;
+  transition: transform .3s;
+  transform: scaleX(0);
+}
+
+header.main_page nav ul li a:hover:after {
+  transform: scaleX(1);
+}
+
+div.logo h1 {
+  font-family: 'latobold';
+  color: #333;
+  font-size: 36px;
+}
+
+div.logo h2 {
+  font-family: 'latoregular';
+  color: #333;
+  font-size: 18px;
+  line-height: 27px;
 }
 
 div.wrapper {
@@ -116,10 +169,57 @@ div.wrapper {
   margin: 0 auto;
 }
 
-section.content article.post {
+article.post {
   box-sizing: border-box;
-  padding: 58px 97px 79px;
   background-color: #fff;
   margin-bottom: 60px;
+  -webkit-box-shadow: 0px 0px 28px 0px rgba(143,143,143,0.5);
+  -moz-box-shadow: 0px 0px 28px 0px rgba(143,143,143,0.5);
+  box-shadow: 0px 0px 28px 0px rgba(143,143,143,0.5);
 }
 
+article.post div.content_wrapper {
+  padding: 58px 97px 79px;
+  position: relative;
+
+}
+
+article.post figure {
+  width: 100%;
+}
+
+article.post h3 {
+  font-size: 40px;
+  line-height: 50px;
+  font-family: 'latobold';
+  padding: 20px 0 42px;
+  margin-bottom: 42px;
+  border-bottom: 2px solid #eee;
+}
+
+article.post p {
+  font-size: 18px;
+  line-height: 27px;
+}
+
+article.post time {
+  color: #bdbdbd;
+  font-size: 14px;
+  font-family: 'latobold';
+}
+
+article.post span.category {
+  background-color: #5c6bc0;
+  display: block;
+  font-size: 14px;
+  font-family: 'latobold';
+  color: #fff;
+  position: absolute;
+  top: 25px;
+  right: -10px;
+  padding: 5px 10px;
+}
+
+article.post figure img {
+  width: 100%;
+}
