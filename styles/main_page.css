@@ -223,3 +223,137 @@ article.post span.category {
 article.post figure img {
   width: 100%;
 }
+
+article.post div.footnote {
+  margin-top: 55px;
+  display: flex;
+  justify-content: space-between;
+}
+
+article.post div.footnote a {
+  font-family: 'latobold';
+  color: #651ad5;
+  font-size: 21px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+article.post div.footnote nav.tags ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+article.post div.footnote nav.tags ul li a {
+  margin-left: 10px;
+  font-size: 15px;
+  text-transform: none;
+  font-family: 'latoregular';
+  text-decoration: none;
+  color: #bdbdbd;
+}
+
+article.post div.footnote nav.tags ul li a:before {
+  content: "#";
+  font-size: 15px;
+
+}
+
+article.post div.footnote nav.tags ul li a:hover {
+  color: #333;
+}
+
+div.pagination {
+  margin-bottom: 112px;
+}
+
+div.pagination ul {
+  display: flex;
+  justify-content: center;
+}
+
+div.pagination ul li a {
+  margin: 0 8px;
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'latobold';
+  font-size: 18px;
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+  color: #000;
+  background-color: #fff;
+  padding-top: 12px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+div.pagination ul li a:hover {
+  background-color: #eee;
+}
+
+div.pagination ul li a.active {
+  background-color: #556eba;
+  color: #fff;
+}
+
+footer.main_page {
+  background-color: #556eba;
+  padding: 67px 0 79px;
+  color: #8c9bcf;
+  text-align: center;
+}
+
+footer.main_page div.footer_wrapper {
+  margin: 0 auto;
+  max-width: 756px;
+  padding: 0 14px;
+}
+
+footer.main_page h4 {
+  color: #465995;
+  font-family: 'latobold_italic';
+  font-size: 36px;
+  margin-bottom: 64px;
+}
+
+footer.main_page nav.footer_nav {
+  padding-bottom: 45px;
+  margin-bottom: 43px;
+  border-bottom: 2px solid #5168af;
+}
+
+footer.main_page nav.footer_nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+footer.main_page nav.footer_nav ul li a{
+  font-size: 16px;
+  font-family: 'latobold';
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  margin: 0 19px;
+}
+
+footer.main_page nav.footer_nav ul li a:hover{
+  color: #9faad4;
+}
+
+footer.main_page div.disclaimer {
+  font-size: 13px;
+  padding-bottom: 45px;
+  margin-bottom: 43px;
+  border-bottom: 2px solid #5168af;
+}
+
+footer.main_page nav.socials ul {
+  display: flex;
+  justify-content: center;
+}
+
+footer.main_page nav.socials ul li a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 22px;
+}
