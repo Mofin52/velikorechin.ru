@@ -204,6 +204,10 @@ article.post {
   box-shadow: 0px 0px 28px 0px rgba(143,143,143,0.5);
 }
 
+article.portfolio div.content_wrapper {
+  
+}
+
 article.post div.content_wrapper {
   padding: 58px 97px 79px;
   position: relative;
