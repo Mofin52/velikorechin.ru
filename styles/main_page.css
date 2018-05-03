@@ -341,27 +341,12 @@ article.portfolio {
 }
 
 article.portfolio img {
-  margin-bottom: -2px;
   width: 100%;
-  opacity: 1;
-  transition: opacity .1s;
 }
 
-article.portfolio:hover img {
-  opacity: .3;
-  transition: opacity .1s;
-}
 
 article.portfolio div.content_wrapper{
-  position: absolute;
-  top: 20px;
-  opacity: 0;
-  transition: opacity .3s;
-}
-
-article.portfolio:hover div.content_wrapper{
-  opacity: 1;
-  transition: opacity .3s;
+  padding: 20px;
 }
 
 
