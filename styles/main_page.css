@@ -212,7 +212,7 @@ article.post figure {
   width: 100%;
 }
 
-article.post h3, article.post.inner h1 {
+article.post h3, article.post.inner h1, article.project h1, article.about h1 {
   font-size: 40px;
   line-height: 50px;
   font-family: 'latobold';
@@ -221,12 +221,18 @@ article.post h3, article.post.inner h1 {
   border-bottom: 2px solid #eee;
 }
 
-article.post p {
+article.post.inner h3, article.about h3 {
+  font-size: 32px;
+  line-height: 40px;
+  margin-bottom: 10px;
+}
+
+article.post p, article.project p, article.project figure figcaption, article.about p {
   font-size: 18px;
   line-height: 27px;
 }
 
-article.post.inner p {
+article.post.inner p, article.about p {
   margin-bottom: 18px;
 }
 
@@ -384,6 +390,146 @@ article.portfolio div.footnote nav.tags ul li a {
   cursor: default;
 }
 
+article.portfolio div.mainlink {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  color: #fff;
+  background-color:rgba(92,107,192, .7);
+  text-decoration: none;
+  opacity: 0;
+  transition: opacity .3s;
+}
+
+article.portfolio:hover div.mainlink {
+  opacity: 1;
+  transition: opacity .3s;
+}
+
+article.portfolio div.mainlink a {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+  font-size: 36px;
+  text-decoration: none;
+  color: #000;
+  background-color: rgba(255,255,255,.8);
+  border-radius: 50%;
+}
+
+/* РАБОТА В ПОРТФОЛИО */
+
+article.project figure {
+  width: 100%;
+  padding: 40px 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+article.project div.descr figure:first-child {
+  border-top: 2px solid #eee;
+  margin-top: 42px;
+}
+
+article.project div.descr figure:last-child {
+  border-bottom: 2px solid #eee;
+  margin-bottom: 42px;
+}
+
+article.project figure figcaption {
+  width: 30%;
+  position: absolute;
+  right: 0;
+}
+
+article.project figure a {
+  width: 50%;
+  display: block;
+}
+
+article.project figure a img {
+  width: 100%;
+}
+
+article.project figure a:after {
+  content: " ";
+  width: 175px;
+  height: 70px;
+  background-image: url('../img/arrow.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  top: 50%;
+  margin-top: -40px;
+}
+
+article.project figure:nth-child(2n) a:after {
+  transform: rotateX(-180deg);
+}
+
+/* ОБО МНЕ */
+article.about {
+  box-sizing: border-box;
+  margin-bottom: 60px;
+  padding: 58px 97px 79px;
+  position: relative;
+}
+
+article.about h1 {
+  border: none;
+}
+
+article.about p.hello {
+  margin-bottom: 70px;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+article.about blockquote {
+  margin-bottom: 18px;
+  color: #777;
+  padding-left: 40px;
+  border-left: 3px solid #5c6bc0;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+article.about figure.full {
+  width: 100%;
+  margin: 30px 0 50px;
+}
+
+article.about figure.right {
+  width: 50%;
+  float: right;
+  margin: 10px 0 50px 50px;
+}
+
+article.about figure.left {
+  width: 50%;
+  float: left;
+  margin: 10px 50px 50px 0;
+}
+
+article.about figure img {
+  width: 100%;
+}
+
+article.about section.about-module {
+  margin-bottom: 70px;
+}
+
+article.about section.about-module:last-child {
+  margin-bottom: 0;
+}
 
 div.pagination {
   margin-bottom: 112px;
